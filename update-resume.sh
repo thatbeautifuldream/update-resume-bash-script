@@ -36,7 +36,7 @@ if [ $? -eq 0 ]; then
         exit 1
     fi
     
-    if ! git commit -m "updating resume at $(date '+%Y-%m-%d %H:%M:%S') by update-resume.sh"; then
+    if ! git commit -m "updating resume $(date +'%Y-%m-%d_%H-%M-%S') by update-resume.sh"; then
         echo "Error: Failed to commit changes"
         exit 1
     fi
